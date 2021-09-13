@@ -2,10 +2,11 @@
   "name": "starter-sanity",
   "description": "Sanity.io starter template",
   "scripts": {
-    "init": "npm-run-all init:sanity init:sanity-plugin-connector init:fix-sanity-config update-schema",
+    "init": "npm-run-all init:sanity init:sanity-plugin-connector init:fix-sanity-config init:populate-onlyhtml-config update-schema",
     "init:sanity": "sanity init --dataset production --output-path ./sanity-studio --template clean",
     "init:sanity-plugin-connector": "cd sanity-studio && npm install --legacy-peer-deps --save styled-components && sanity install @onlyhtml/sanity-plugin-onlyhtml-connector",
     "init:fix-sanity-config": "cd sanity-studio && node ../scripts/fix-sanity-config.js",
+    "init:populate-onlyhtml-config": "node ./scripts/populate-onlyhtml-config.js",
     "update-schema": "onlyhtml push sanity --path sanity-studio/config/@onlyhtml/sanity-plugin-onlyhtml-connector.json",
     "serve": "npm-run-all --parallel serve:onlyhtml serve:sanity",
     "serve:onlyhtml": "onlyhtml serve sanity",
