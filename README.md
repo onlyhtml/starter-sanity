@@ -2,6 +2,7 @@
 Sanity.io starter template
 
 # Setup
+Run these commands and follow the instructions to setup your sanity.io setup
 ```bash
 git clone git@github.com:onlyhtml/starter-sanity.git
 cd starter-sanity
