@@ -7,7 +7,7 @@
     "init:sanity-plugin-connector": "cd sanity-studio && npm install --legacy-peer-deps --save styled-components && sanity install @onlyhtml/sanity-plugin-onlyhtml-connector",
     "init:fix-sanity-config": "cd sanity-studio && node ../scripts/fix-sanity-config.js",
     "init:populate-onlyhtml-config": "node ./scripts/populate-onlyhtml-config.js",
-    "update-schema": "onlyhtml push sanity --path sanity-studio/config/@onlyhtml/sanity-plugin-onlyhtml-connector.json",
+    "update-schema": "onlyhtml export sanity --path sanity-studio/config/@onlyhtml/sanity-plugin-onlyhtml-connector.json",
     "serve": "npm-run-all --parallel serve:onlyhtml serve:sanity",
     "serve:onlyhtml": "onlyhtml serve sanity",
     "serve:sanity": "cd sanity-studio && sanity start",
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@onlyhtml/onlyhtml": "^1.1.1",
-    "@sanity/cli": "^2.18.0",
+    "@sanity/cli": "^2.19.1",
     "alpinejs": "^3.3.3",
     "npm-run-all": "^4.1.5"
   }
