@@ -10,7 +10,8 @@
     "update-schema": "onlyhtml push sanity --path sanity-studio/config/@onlyhtml/sanity-plugin-onlyhtml-connector.json",
     "serve": "npm-run-all --parallel serve:onlyhtml serve:sanity",
     "serve:onlyhtml": "onlyhtml serve sanity",
-    "serve:sanity": "cd sanity-studio && sanity start"
+    "serve:sanity": "cd sanity-studio && sanity start",
+    "start": "npm run serve"
   },
   "devDependencies": {
     "@onlyhtml/onlyhtml": "^1.1.1",
